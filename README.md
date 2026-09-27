@@ -1,16 +1,36 @@
-# React + Vite
+# CampusAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+CampusAI is a student dashboard for organizing university subjects and exploring a more focused study workflow. It is an early-stage React application, with a working subjects page and additional tools planned.
 
-Currently, two official plugins are available:
+## Current features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dashboard:** an overview layout with sample study metrics and today's plan. The displayed numbers are demo content.
+- **Subjects:** view subject cards, add a subject through a form, and keep added subjects in your browser's local storage.
+- **Navigation:** pages for Study Planner, Assignments, Exams, StudyLens, and AI Assistant are present as placeholders for future work.
 
-## React Compiler
+The AI assistant and StudyLens do not yet provide AI features. There is no backend or account sync; subject data is stored only in the current browser.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built with
 
-## Expanding the Oxlint configuration
+React · Vite · React Router · JavaScript · CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Run locally
+
+You need a recent Node.js version and npm.
+
+```bash
+git clone https://github.com/dionstacey03-dev/CampusAI.git
+cd CampusAI
+npm ci
+npm run dev
+```
+
+Open the local URL printed by Vite (usually `http://localhost:5173`). To make a production build, run `npm run build`.
+
+## Next steps
+
+- Replace dashboard sample data with real study information.
+- Build the planner, assignments, and exams workflows.
+- Develop StudyLens and AI Assistant after the core study tools work.
+
+Built by [Dion Stacey Sellar](https://github.com/dionstacey03-dev).
